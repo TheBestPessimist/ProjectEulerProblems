@@ -36,6 +36,7 @@ def prod(l):
 
 slice_len = 13
 
+# list comprehensions ftw! :D
 slices = [nr[i:i+slice_len] for i in range(len(nr))]
 slices = [ prod([int(char) for char in i]) for i in slices ]
 print(sorted(slices)[-1])
